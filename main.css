@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, serif;
+    color: white;
+}
+
+header {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_github-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-image: url("assets/images/github.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-size: 100px;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}

@@ -7,6 +7,17 @@
     color: white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 header {
     background-color: black;
     height: 100vh;
@@ -16,7 +27,8 @@ header {
     align-items: center;
 }
 
-.header_github-icon {
+.header_github {
+    box-sizing: border-box;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -26,12 +38,21 @@ header {
     height: 32px;
 }
 
-h1 {
+.header_github:focus-visible {
+    outline: none;
+}
+
+.header_hello-world {
     font-size: 100px;
     white-space: nowrap;
     letter-spacing: 2px;
-    user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
+}
+
+.header_probablyskela {
+    position: absolute;
+    left: 1vw;
+    bottom: 1vh;
+    letter-spacing: 1.5vw;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.075);
 }

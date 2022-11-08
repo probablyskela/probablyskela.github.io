@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Ubuntu, serif;
     color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,14 +22,13 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-user-select: none;
 }
 
-body {
-    overflow-x: hidden;
+.section {
+    height: 100vh;
+    width: 100vw;
 }
 
 header {
     background-color: black;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +37,7 @@ header {
 .header_github {
     box-sizing: border-box;
     position: absolute;
-    right: 10px;
+    right: 10px;    
     top: 10px;
     background-image: url("assets/images/github.png");
     background-size: contain;
@@ -49,10 +56,33 @@ header {
 }
 
 .header_probablyskela {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 98vw;
     position: absolute;
     left: 1vw;
     bottom: 1vh;
-    letter-spacing: 1.5vw;
-    font-size: 3vw;
-    color: rgba(255, 255, 255, 0.075);
+}
+
+.header_probablyskela li {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 4.5vw;
+    font-weight: 500;
+}
+
+.test-section1 {
+    background-color: yellow;
+} 
+
+.test-section2 {
+    background-color: green;
+}
+
+.test-section3 {
+    background-color: blue;
+}
+
+footer {
+    background-color: black;
 }

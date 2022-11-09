@@ -7,12 +7,10 @@ const unlock = async function () {
 }
 
 function scrollTo(element) {
-    if (!scrolling) {
-        scrolling = true;
-        $('html').animate({
-            scrollTop: element.offsetTop
-        }, {duration: 200, easing: 'easeOutQuad', complete: unlock});
-    }
+    scrolling = true;
+    $('html').animate({
+        scrollTop: element.offsetTop
+    }, {duration: 200, easing: 'easeOutQuad', complete: unlock});
 }
 
 document.addEventListener('DOMContentLoaded', function () {

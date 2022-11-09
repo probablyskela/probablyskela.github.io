@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation_element {
     cursor: pointer;
-    width: 22px;
-    height: 9px;
+    width: 28px;
+    height: 14px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 5px 1px black;
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navigation_element.active {
-    height: 18px;
+    height: 24px;
 }
 
 header {
@@ -97,6 +97,10 @@ header {
     position: absolute;
     left: 1vw;
     bottom: 1vh;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 }
 
 .header_probablyskela li {

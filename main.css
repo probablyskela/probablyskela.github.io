@@ -9,7 +9,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Ubuntu, serif;
-    color: white;
+    color: #DBDBDB;
 }
 
 html {
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     width: 28px;
     height: 14px;
-    background-color: white;
+    background-color: #DBDBDB;
     border-radius: 5px;
     box-shadow: 0 0 5px 1px black;
     transition: all 0.2s ease;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-color: black;
+    background-color: #050505;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,8 +75,8 @@ header {
     top: 10px;
     background-image: url("assets/images/github.png");
     background-size: contain;
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
 }
 
 .header_github:focus-visible {

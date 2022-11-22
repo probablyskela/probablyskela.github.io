@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation_element {
     cursor: pointer;
     width: 28px;
-    height: 14px;
+    height: 20px;
     background-color: #DBDBDB;
     border-radius: 5px;
     box-shadow: 0 0 5px 1px black;
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navigation_element.active {
-    height: 24px;
+    height: 36px;
 }
 
 header {

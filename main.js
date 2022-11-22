@@ -10,7 +10,7 @@ function scrollTo(element) {
     scrolling = true;
     $('html').animate({
         scrollTop: element.offsetTop
-    }, {duration: 200, easing: 'easeOutQuad', complete: unlock});
+    }, {duration: 400, easing: 'easeOutQuad', complete: unlock});
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -37,17 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(vw, vh);
 
     document.addEventListener('scroll', () => {
-        // if (!scrolling) {
-        //     scrollTo(sections[(Math.floor(scrollY / vh) + (scrollY > prevPos)) % sections.length]);
-        //     prevPos = scrollY <= 0 ? 0 : scrollY;
-        // }
-        let currentIndex = Math.floor(scrollY / vh);
         for (const element of navigation_elements) {
-            if (element !== navigation_elements[currentIndex]) {
-                element.classList.remove('active');
-            } else {
-                element.classList.add('active');
-            }
+            element.classList.remove('active');
         }
+        navigation_elements[Math.floor((window.scrollY + (vh / 2)) / vh)].classList.add('active');
     });
 });

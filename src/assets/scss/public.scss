@@ -1,0 +1,22 @@
+$dark-main: #050505;
+$dark-secondary: #B3B3B3;
+$light-main: #DBDBDB;
+$light-secondary: #C8C8C8;
+
+$base-fz: 18px;
+
+$header-height: 80px;
+
+@mixin fix-text() {
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+@mixin base-section() {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}

@@ -1,0 +1,1 @@
+import{o as _,c as n,a as r}from"./index-7dd5ad76.js";const a=(e,o)=>{const t=e.__vccOpts||e;for(const[s,c]of o)t[s]=c;return t},l={},i={class:"home"},d=r("h1",{class:"home_hello"},"Hello, World!",-1),h=[d];function m(e,o){return _(),n("section",i,h)}const p=a(l,[["render",m]]);export{p as default};

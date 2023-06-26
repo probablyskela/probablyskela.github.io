@@ -3,18 +3,19 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-<div class="header">
+<header class="header">
     <nav>
-        <!-- <span>|</span> -->
         <RouterLink to="/" class="probablyskela">probablyskela</RouterLink>
         <span>|</span>
-        <ul>
-
-        </ul>
+        <RouterLink to="/">Blog</RouterLink>
+        <span>|</span>
+        <RouterLink to="/">Projects</RouterLink>
     </nav>
 
-    <a href="https://github.com/probablyskela" target="_blank" class="github"></a>
-</div>
+    <a href="#">Log in via GitHub</a>
+
+    <!-- <a href="https://github.com/probablyskela" target="_blank" class="github"></a> -->
+</header>
 </template>
 
 <style lang="scss">
@@ -25,7 +26,7 @@ import { RouterLink } from 'vue-router';
     height: $header-height;
 
     box-sizing: border-box;
-    padding: 0 100px;
+    padding: 0 50px;
 
     background-color: $dark-main;
 
@@ -37,6 +38,10 @@ import { RouterLink } from 'vue-router';
     align-items: center;
     justify-content: space-between;
 
+    a {
+        text-decoration: none;
+        font-weight: 100;     
+    }
 
     nav {
         display: flex;
@@ -45,10 +50,7 @@ import { RouterLink } from 'vue-router';
         gap: 20px;
 
         .probablyskela {
-            text-decoration: none;
-            letter-spacing: 3px;
             font-size: 20px;
-            font-weight: 100;     
         }
     }
 

@@ -16,7 +16,7 @@
     align-items: center;
 
     .home_hello {
-        font-size: 69px;
+        font-size: 90px;
     }
 }
 </style>
